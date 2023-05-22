@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <title>cash register</title>
+</head>
+<body>
+  <div id="body-wrapper">
+  <header>
+    <h2 class="logo"> github repo</h2>
+   <h3>
+ <a href="https://github.com/gonzalote99" target="_blank" class="link github_repo">
+ <i class="fab fa-github"></i></a>
+   </h3>
+
+  
+  </header>
+
+  <div class="container text-center"> 
+    <section class="cash-register-hero">
+        <h1 class="cash-register-hero-head">💰 Cash Register Manager</h1>
+        <p class="cash-register-hero-lead">Enter the bill amount and cash given by the customer to know the number of notes to return.</p>
+    </section>
+    <main class="main">
+        <section class="bill-amount-input">
+            <h3 class="section-head"><label for="bill-amount">Bill Amount</label></h3>
+            <input type="number" name="bill-amount" id="bill-amount" class="bill-amount">
+            <button class="btn btn-submit">Submit Amount</button>
+        </section>
+        
+        <section class="cash-amount-input hidden">
+            <h3 class="section-head"><label for="cash-amount">Cash Given</label></h3>
+            <input type="number" name="cash-amount" id="cash-amount">
+            <div class="cash-amount-btn">
+                <button class="btn btn-submit-cash">Submit Cash Amount</button>
+                <button class="btn btn-reset">Reset</button>
+            </div>
+        </section>
+        
+        <section class="cash-return-output hidden">
+            <h3 class="section-head">Return Change</h3>
+            <p class="return-amount"></p>
+            <div class="grid-container">
+                <div class="number">No. of Notes</div>
+                <div class="number num-notes two-thousand"></div>
+                <div class="number num-notes five-hundred"></div>
+                <div class="number num-notes hundred"></div>
+                <div class="number num-notes twenty"></div>
+                <div class="number num-notes ten"></div>
+                <div class="number num-notes five"></div>
+                <div class="number num-notes one"></div>
+                <div class="note">Note</div>
+                <div class="note two-thousand">₹ 2000</div>
+                <div class="note five-hundred">₹ 500</div>
+                <div class="note hundred">₹ 100</div>
+                <div class="note twenty">₹ 20</div>
+                <div class="note ten">₹ 10</div>
+                <div class="note five">₹ 5</div>
+                <div class="note one">₹ 1</div>
+            </div>
+        </section>
+    </main>
+</div>
+  <footer>
+  <div class="small">
+    <ul>
+    <li>
+     <a class="link"><i class="fab fa-github"></i>github</a>
+     <a class="link"><i class="fab fa-twitter"></i>twitter</a>
+     <a class="link"><i class="fab fa-linkedin"></i>linkedin</a>
+    </li>
+    </ul>
+  </div>
+  </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
